@@ -413,7 +413,7 @@ h1, h2, h3, h4 {
 
 /* ===== About Section ===== */
 .about-section {
-    padding: 8rem 2rem;
+    padding: 8rem 2rem 4rem 2rem;
     background-color: var(--color-bg-alt);
 }
 
@@ -494,7 +494,7 @@ h1, h2, h3, h4 {
 
 /* ===== Contact Section ===== */
 .contact-section-minimal {
-    padding: 8rem 2rem;
+    padding: 4rem 2rem 8rem 2rem;
     text-align: center;
     background-color: var(--color-bg-alt);
 }
