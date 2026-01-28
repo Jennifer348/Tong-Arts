@@ -19,10 +19,10 @@
             </button>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#calligraphy" class="nav-link">Calligraphy</a></li>
-                <li><a href="#painting" class="nav-link">Painting</a></li>
-                <li><a href="#photography" class="nav-link">Photography</a></li>
-                <li><a href="#documentary" class="nav-link">Documentary</a></li>
+                <li><a href="calligraphy.html" class="nav-link">Calligraphy</a></li>
+                <li><a href="painting.html" class="nav-link">Painting</a></li>
+                <li><a href="photography.html" class="nav-link">Photography</a></li>
+                <li><a href="documentary.html" class="nav-link">Documentary</a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +35,7 @@
                 <span class="title-line">Visual Designer</span>
             </h1>
             <p class="hero-subtitle">Creating visual narratives through art, photography, and design</p>
-            <a href="#work" class="hero-cta">View Work</a>
+            <a href="#sectors" class="hero-cta">View Work</a>
         </div>
         <div class="hero-scroll">
             <span>Scroll</span>
@@ -43,79 +43,53 @@
         </div>
     </section>
 
-    <!-- Work/Portfolio Section -->
-    <section id="work" class="work-section">
+    <!-- Sectors Section -->
+    <section id="sectors" class="sectors-section">
         <div class="section-header">
-            <h2 class="section-title">Selected Work</h2>
-            <p class="section-subtitle">A curated collection of recent projects</p>
+            <h2 class="section-title">Work</h2>
+            <p class="section-subtitle">Explore by category</p>
         </div>
 
-        <div class="portfolio-grid">
-            <!-- Project 1 -->
-            <div class="portfolio-item large">
-                <div class="portfolio-image">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&q=80" alt="Project 1">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title One</h3>
-                        <p>Photography / 2024</p>
-                    </div>
+        <div class="sectors-grid">
+            <!-- Calligraphy -->
+            <a href="calligraphy.html" class="sector-item" id="calligraphy">
+                <div class="sector-image">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80" alt="Calligraphy">
                 </div>
-            </div>
+                <div class="sector-overlay">
+                    <h3>Calligraphy</h3>
+                </div>
+            </a>
 
-            <!-- Project 2 -->
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=600&q=80" alt="Project 2">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title Two</h3>
-                        <p>Illustration / 2024</p>
-                    </div>
+            <!-- Painting -->
+            <a href="painting.html" class="sector-item" id="painting">
+                <div class="sector-image">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80" alt="Painting">
                 </div>
-            </div>
+                <div class="sector-overlay">
+                    <h3>Painting</h3>
+                </div>
+            </a>
 
-            <!-- Project 3 -->
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=600&q=80" alt="Project 3">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title Three</h3>
-                        <p>Mixed Media / 2023</p>
-                    </div>
+            <!-- Photography -->
+            <a href="photography.html" class="sector-item" id="photography">
+                <div class="sector-image">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&q=80" alt="Photography">
                 </div>
-            </div>
+                <div class="sector-overlay">
+                    <h3>Photography</h3>
+                </div>
+            </a>
 
-            <!-- Project 4 -->
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=600&q=80" alt="Project 4">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title Four</h3>
-                        <p>Digital Art / 2023</p>
-                    </div>
+            <!-- Documentary -->
+            <a href="documentary.html" class="sector-item" id="documentary">
+                <div class="sector-image">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80" alt="Documentary">
                 </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="portfolio-item large">
-                <div class="portfolio-image">
-                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80" alt="Project 5">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title Five</h3>
-                        <p>Painting / 2023</p>
-                    </div>
+                <div class="sector-overlay">
+                    <h3>Documentary</h3>
                 </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80" alt="Project 6">
-                    <div class="portfolio-overlay">
-                        <h3>Project Title Six</h3>
-                        <p>Sculpture / 2022</p>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -152,55 +126,50 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="contact-text">
-                    Interested in collaborating or have a project in mind? Feel free to reach out.
-                </p>
-                <div class="contact-details">
-                    <a href="mailto:fangtong0215@gmail.com" class="contact-link">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">fangtong0215@gmail.com</span>
-                    </a>
-                    <a href="tel:+8618500610253" class="contact-link">
-                        <span class="contact-label">Phone</span>
-                        <span class="contact-value">18500610253</span>
-                    </a>
+    <section id="contact" class="contact-section-minimal">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-tagline">Interested in collaborating or have a project in mind?</p>
+
+        <div class="contact-cards">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fangtong0215@gmail.com" target="_blank" class="contact-card">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M22 6L12 13L2 6"/>
+                    </svg>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/fangtong_14?igsh=aHFicm9udWpjbDA=" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="2" width="20" height="20" rx="5"/>
-                            <circle cx="12" cy="12" r="4"/>
-                            <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
-                        </svg>
-                    </a>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">fangtong0215@gmail.com</span>
+            </a>
+
+            <a href="tel:+8618500610253" class="contact-card">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
                 </div>
-            </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">18500610253</span>
+            </a>
+
+            <a href="https://www.instagram.com/fangtong_14?igsh=aHFicm9udWpjbDA=" class="contact-card" target="_blank">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                    </svg>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="form-submit">Send Message</button>
-            </form>
+                <span class="contact-card-label">Instagram</span>
+                <span class="contact-card-value">@fangtong_14</span>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p class="footer-text">&copy; 2024 Tong Fang. All rights reserved.</p>
+            <p class="footer-text">&copy; 2025-2026 Tong Fang. All rights reserved.</p>
             <a href="#home" class="back-to-top">Back to Top</a>
         </div>
     </footer>

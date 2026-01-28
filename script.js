@@ -64,43 +64,11 @@ const animateOnScroll = (entries, observer) => {
 const observer = new IntersectionObserver(animateOnScroll, observerOptions);
 
 // Observe elements for scroll animations
-document.querySelectorAll('.portfolio-item, .about-content, .about-image, .contact-info, .contact-form').forEach(el => {
+document.querySelectorAll('.portfolio-item, .about-content, .about-image, .sector-item, .contact-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
-});
-
-// ===== Form Submission (Placeholder) =====
-const contactForm = document.querySelector('.contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        message: formData.get('message')
-    };
-
-    // Placeholder: In production, you would send this to a server
-    console.log('Form submitted:', data);
-
-    // Show success feedback
-    const submitBtn = contactForm.querySelector('.form-submit');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Message Sent!';
-    submitBtn.style.backgroundColor = '#2c2c2c';
-
-    // Reset form
-    contactForm.reset();
-
-    // Reset button after 3 seconds
-    setTimeout(() => {
-        submitBtn.textContent = originalText;
-    }, 3000);
 });
 
 // ===== Active Navigation Link Highlight =====
