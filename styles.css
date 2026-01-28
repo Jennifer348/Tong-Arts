@@ -178,10 +178,28 @@ h1, h2, h3, h4 {
     text-align: center;
     padding: 6rem 2rem 4rem;
     position: relative;
-    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+    background-color: var(--color-bg);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('asset/pro-pic-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 1;
     max-width: 800px;
 }
 
@@ -231,6 +249,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
+    z-index: 1;
 }
 
 .hero-scroll span {
@@ -353,17 +372,6 @@ h1, h2, h3, h4 {
     width: 100%;
     aspect-ratio: 3/4;
     object-fit: cover;
-}
-
-.about-image::before {
-    content: '';
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    right: -2rem;
-    bottom: -2rem;
-    border: 1px solid var(--color-border);
-    z-index: -1;
 }
 
 .about-content .section-title {
@@ -663,10 +671,6 @@ h1, h2, h3, h4 {
     .about-image {
         max-width: 400px;
         margin: 0 auto;
-    }
-
-    .about-image::before {
-        display: none;
     }
 
     .contact-container {
